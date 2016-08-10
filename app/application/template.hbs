@@ -1,13 +1,12 @@
 {{outlet}}
 
 {{#paper-button raised=true primary=true onClick=(action parse)}}Parse{{/paper-button}}
-{{#paper-button raised=true primary=true onClick=(action numberOfT)}}Number of T's{{/paper-button}}
 <ul class="parse-list">
   <li class="parse-list__item">
     <p class="parse-list__item--p">Begins with t: {{numTs}}</p>
   </li>
   <li class="parse-list__item">
-    <p class="parse-list__item--p">Ends with e:</p>
+    <p class="parse-list__item--p">Ends with e: {{numEs}}</p>
   </li>
   <li class="parse-list__item">
     <p class="parse-list__item--p">Begins with t and end with e:</p>
