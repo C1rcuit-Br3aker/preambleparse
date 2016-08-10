@@ -1,6 +1,7 @@
 {{outlet}}
-
-{{#paper-button raised=true primary=true onClick=(action parse)}}Parse{{/paper-button}}
+  {{textarea value=input placeholder="Input a string here" type="text-area"}}
+  {{#paper-button raised=true primary=true onClick=(action parse input)}}Parse{{/paper-button}}
+  {{#paper-button raised=true primary=true onClick=(action usePreamble)}}Or Use Preamble{{/paper-button}}
 <ul class="parse-list">
   <li class="parse-list__item">
     <p class="parse-list__item--p">Begins with t: {{numTs}}</p>
@@ -9,6 +10,6 @@
     <p class="parse-list__item--p">Ends with e: {{numEs}}</p>
   </li>
   <li class="parse-list__item">
-    <p class="parse-list__item--p">Begins with t and end with e:</p>
+    <p class="parse-list__item--p">Begins with t and end with e: {{numTEs}}</p>
   </li>
 </ul>
