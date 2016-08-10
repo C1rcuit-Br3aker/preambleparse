@@ -7,6 +7,7 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('logout');
+  this.route('parse');
 });
 
 export default Router;

@@ -1,3 +1,14 @@
 {{outlet}}
 
-<button class="parse-btn" onclick="parse">Parse</button>
+{{#paper-button raised=true primary=true onClick=(action parse)}}Parse{{/paper-button}}
+<ul class="parse-list">
+  <li class="parse-list__item">
+    <p class="parse-list__item--p">Begins with t:</p>
+  </li>
+  <li class="parse-list__item">
+    <p class="parse-list__item--p">Ends with e:</p>
+  </li>
+  <li class="parse-list__item">
+    <p class="parse-list__item--p">Begins with t and end with e:</p>
+  </li>
+</ul>
